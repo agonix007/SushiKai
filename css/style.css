@@ -215,18 +215,18 @@ a {
     display: none;
   }
 
-  .header__menu{
+  .header__menu {
     flex-direction: column;
     gap: 64px;
   }
 
-  .header__menu a:link{
+  .header__menu a:link {
     font-size: 30px;
   }
 
-  .header__menu img{
-    display: none
-  };
+  .header__menu img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -309,14 +309,16 @@ a {
   }
 
   .subscription__form {
-    flex-direction: column;
-    gap: 20px;
-
     min-width: 100%;
     border-radius: 20px;
     padding: 0;
 
     border: none;
+  }
+
+  .subscription__form form {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .subscription__form input {
