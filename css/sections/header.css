@@ -1,3 +1,7 @@
+.header {
+  position: relative;
+}
+
 .header__nav {
   display: flex;
   overflow: hidden;
@@ -20,7 +24,7 @@
   z-index: -1;
 }
 
-.header__logo h4 {
+.header__logo a {
   padding-left: 30px;
 
   font-weight: 700;
@@ -31,11 +35,14 @@
   opacity: 0.8;
 }
 
+.main-nav {
+  flex: 1.31;
+}
+
 .header__menu,
 .header__menu-mobile {
   padding: 20px;
 
-  flex: 1.235;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -65,4 +72,15 @@
   gap: 20px;
 
   position: relative;
+  z-index: 9999;
+}
+
+.nav__btn-mobile {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.close__btn {
+  display: none;
 }

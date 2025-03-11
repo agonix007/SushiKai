@@ -12,25 +12,30 @@
     <title>SushiKai</title>
   </head>
   <body>
-    <header>
-      <nav class="header__nav">
+    <header class="header">
+      <div class="header__nav">
         <div class="header__logo">
-          <h4 data-aos="fade-down">SushiKai</h4>
+          <a href="#" data-aos="fade-down">SushiKai</a>
           <div class="header__logo-overlay"></div>
         </div>
 
-        <ul class="header__menu" data-aos="fade-down">
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#food">Food</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li><img src="./assets/search.svg" alt="search" /></li>
-        </ul>
+        <nav class="main-nav">
+          <ul class="header__menu" data-aos="fade-down">
+            <li><a class="nav__link" href="#menu">Menu</a></li>
+            <li><a class="nav__link" href="#food">Food</a></li>
+            <li><a class="nav__link" href="#services">Services</a></li>
+            <li><a class="nav__link" href="#about-us">About Us</a></li>
+            <li><img src="./assets/search.svg" alt="search" /></li>
+          </ul>
+        </nav>
 
-        <ul class="header__menu-mobile" data-aos="fade-down">
-          <li><img src="./assets/menu.svg" alt="menu" /></li>
-        </ul>
-      </nav>
+        <div class="header__menu-mobile" data-aos="fade-down">
+          <button class="nav__btn-mobile">
+            <img src="./assets/menu.svg" alt="menu" class="menu__btn" />
+            <img src="./assets/close.svg" alt="close" class="close__btn" />
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -350,7 +355,7 @@
     </main>
 
     <footer class="footer flex-between">
-      <h3 class="footer__logo"><span>Sushi</span>kai</h3>
+      <a href="#" class="footer__logo"><span>Sushi</span>kai</a>
 
       <ul class="footer__nav">
         <li><a href="#menu">Menu</a></li>
